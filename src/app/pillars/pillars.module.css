@@ -1,0 +1,196 @@
+
+.container {
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 100%
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.headerContainer p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+
+
+.grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+}
+
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-top: 5px solid #FFD700;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.cardHeader {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: start;
+}
+
+
+.number {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #DC143C, #8B0000);
+  color: #FFD700;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+
+.cardHeaderText h1 {
+  font-size: 2.2rem;
+  color: #DC143C;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+}
+
+.cardHeaderText p {
+  font-size: 1.1rem;
+  color: #666666;
+  font-style: italic;
+  margin: 0;
+}
+
+
+.quoteContainer {
+  background: #FAFAFA;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #FFD700;
+}
+
+.quoteContainer p {
+  font-style: italic;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+.listContainer {
+  margin-bottom: 2rem;
+}
+
+.listContainer h2 {
+  font-size: 1.3rem;
+  color: #DC143C;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.listContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listContainer li {
+  padding: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.listContainer li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #FFD700;
+  font-weight: 700;
+}
+
+
+.impactContainer {
+  padding: 1.5rem;
+  background: #FAFAFA;
+  border-radius: 8px;
+  border: 2px solid #FFD700;
+}
+
+.impactContainer h2 {
+  font-size: 1.1rem;
+  color: #DC143C;
+  font-weight: 700;
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.impactContainer p {
+  display: inline;
+  color: #666666;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+
+  .grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    background: #FAFAFA;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .cardHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .number {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+
+  .cardHeaderText h1 {
+    font-size: 1.8rem;
+  }
+
+  .cardHeaderText p {
+    font-size: 1rem;
+  }
+
+  .listContainer h2 {
+    font-size: 1.2rem;
+  }
+}

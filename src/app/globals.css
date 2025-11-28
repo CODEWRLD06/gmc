@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+:root{
+  --font-heading: "Poppins", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-body: "Inter", "Noto Sans SC", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&family=Noto+Serif+SC:wght@400;700&display=swap');
+
+:root{
+  --font-heading: "Playfair Display", "Noto Serif SC", serif;
+  --font-body: "Inter", "Noto Serif SC", system-ui, -apple-system, "Segoe UI", Roboto;
+} */
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #111;
+}
+
+h1,h2,h3,h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}

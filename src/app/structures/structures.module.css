@@ -1,0 +1,270 @@
+
+.container {
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 100%
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.headerContainer h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #FFD700;
+}
+
+.headerContainer p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 8%;
+}
+
+/* ==================== BOARD & LEADERSHIP SECTION ==================== */
+.BoardContainer {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #FFD700;
+}
+
+.BoardContainer h2 {
+  font-size: 2rem;
+  color: #DC143C;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Board List Container */
+.boardListContainer {
+  background: #FAFAFA;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid #FFD700;
+}
+
+/* Individual Board Cards */
+.boardCard {
+  background: white;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid #DC143C;
+}
+
+.boardCard h3 {
+  font-size: 1.2rem;
+  color: #DC143C;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.boardCard p {
+  color: #666666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==================== EXECUTIVES SECTION ==================== */
+.executivesContainer {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #FFD700;
+}
+
+.executivesContainer h2 {
+  font-size: 2rem;
+  color: #DC143C;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.executivesContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.executivesContainer li {
+  padding: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666666;
+  line-height: 1.7;
+}
+
+.executivesContainer li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #FFD700;
+  font-weight: 700;
+}
+
+/* ==================== CORE TEAMS SECTION ==================== */
+.teamsContainer {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #FFD700;
+}
+
+.teamsContainer h2 {
+  font-size: 2rem;
+  color: #DC143C;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Individual Team Cards in Grid */
+.teamsContainer > div {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid rgb(241, 235, 235);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  margin-left: 1.5rem;
+}
+
+.teamsContainer > div:hover {
+  border-color: #FFD700;
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.1);
+}
+
+.teamsContainer h3 {
+  font-size: 1.1rem;
+  color: #DC143C;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.teamsContainer p {
+  color: #666666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==================== AI & HUMAN TEAMS SECTION ==================== */
+.aiTeamContainer {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-left: 5px solid #FFD700;
+}
+
+.aiTeamContainer > h2 {
+  font-size: 2rem;
+  color: #DC143C;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.aiTeamContainer > p {
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* AI Responsibilities Container */
+.aiResContainer {
+  margin-bottom: 2rem;
+}
+
+.aiResContainer h2,
+.aiTeamContainer > div h2 {
+  font-size: 1.4rem;
+  color: #8B0000;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* List Container for AI/Human Responsibilities */
+.listCont {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listCont li {
+  padding: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666666;
+  line-height: 1.7;
+}
+
+.listCont li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #FFD700;
+  font-weight: 700;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+  
+    .headerContainer h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #FFD700;
+    }
+
+    .grid {
+        margin: 0;
+        background: #FAFAFA;
+    }
+
+  .BoardContainer,
+  .executivesContainer,
+  .teamsContainer,
+  .aiTeamContainer {
+    padding: 2rem;
+  }
+
+  .BoardContainer h2,
+  .executivesContainer h2,
+  .teamsContainer h2,
+  .aiTeamContainer > h2 {
+    font-size: 1.6rem;
+  }
+
+  .boardListContainer {
+    padding: 1.5rem;
+  }
+
+  .boardCard {
+    padding: 1.2rem;
+  }
+}
