@@ -36,7 +36,7 @@ export default function SideBar() {
             <nav className={`${styles.sideBar} ${isActive ? styles.sideBarActive : ''}`}>
                 <div className={styles.sideBarHeader}>
                     <h1 className={styles.logo}>GMC</h1>
-                    <p className={styles.tagline}>God's Agenda. Global Impact.</p>
+                    <p className={styles.tagline}>God&apos;s Agenda. Global Impact.</p>
                 </div>
 
                 <ul className={styles.navList}> 
@@ -64,7 +64,7 @@ export default function SideBar() {
                             onClick={closeSideBar}
                             className={pathName === "/five-gs" ? styles.activeLink : ''}
                         >
-                            The 5 G's of GMC
+                            The 5 G&apos;s of GMC
                         </Link>
                     </li>
                     <li>
