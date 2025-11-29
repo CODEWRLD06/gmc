@@ -1,4 +1,6 @@
 "use client"
+import Logo from "../../../public/logo.svg"
+import Image from "next/image"
 
 import { useState } from "react"
 import Link from "next/link"
@@ -35,7 +37,15 @@ export default function SideBar() {
 
             <nav className={`${styles.sideBar} ${isActive ? styles.sideBarActive : ''}`}>
                 <div className={styles.sideBarHeader}>
-                    <h1 className={styles.logo}>GMC</h1>
+                    <div className={styles.logoContainer}>
+                        <Image 
+                            src={Logo} 
+                            alt="Logo" 
+                            className={styles.logo} 
+                            width={250} 
+                            height={200}
+                        />
+                    </div>
                     <p className={styles.tagline}>God&apos;s Agenda. Global Impact.</p>
                 </div>
 
