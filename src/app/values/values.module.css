@@ -87,6 +87,10 @@
 
 @media (max-width: 768px) {
 
+  .headerContainer h1 {
+    font-size: 2rem;
+  }
+
    .container {
       background-attachment: fixed;
       height: 2800px;

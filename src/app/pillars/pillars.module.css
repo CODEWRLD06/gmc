@@ -184,6 +184,10 @@
 
 @media (max-width: 768px) {
 
+  .headerContainer h1 {
+    font-size: 2rem;
+  }
+
   .grid {
     max-width: 1300px;
     margin: 0 auto;
