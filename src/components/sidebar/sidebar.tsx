@@ -101,7 +101,7 @@ export default function SideBar() {
                             onClick={closeSideBar}
                             className={pathName === "/structures" ? styles.activeLink : ''}
                         >
-                            Organizational Structure
+                            Organization Structure
                         </Link>
                     </li>
                     <li>
