@@ -1,5 +1,5 @@
 "use client"
-import Logo from "../../../public/logo.svg"
+import Logo from "../../../public/logo-two.svg"
 import Image from "next/image"
 
 import { useState } from "react"
@@ -43,10 +43,10 @@ export default function SideBar() {
                             alt="Logo" 
                             className={styles.logo} 
                             width={250} 
-                            height={200}
+                            height={100}
                         />
                     </div>
-                    <p className={styles.tagline}>God&apos;s Agenda. Global Impact.</p>
+                    <p className={styles.tagline}>God&apos;s Agenda, Global Impact.</p>
                 </div>
 
                 <ul className={styles.navList}> 
@@ -111,6 +111,15 @@ export default function SideBar() {
                             className={pathName === "/goals" ? styles.activeLink : ''}
                         >
                             Goals
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/contact"
+                            onClick={closeSideBar}
+                            className={pathName === "/contact" ? styles.activeLink : ''}
+                        >
+                            Contact
                         </Link>
                     </li>
                 </ul>

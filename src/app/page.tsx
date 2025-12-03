@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Logo from "../../public/logo.svg"
+import Logo from "../../public/logo-two.svg"
 import Image from "next/image"
 import styles from "./page.module.css"
 
@@ -10,12 +10,11 @@ export default function Home() {
       <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.logoContainer}>
-              <Image src={Logo} alt="logo" width={200} height={200} className={styles.logo}/>
-              <h1>Glorious Mandarin Company</h1>
+              <Image src={Logo} alt="logo" width={400} height={400} className={styles.logo}/>
+              <h2>Glorious Mandarin Company</h2>
           </div>
           
-          <h3>God&apos;s Agenda. Global Impact</h3>
-          <p>Led by God, Driven for Global Impact</p>
+          <p>God&apos;s Agenda, Global Impact.</p>
           <Link href={"/visions-missions"}>
             <button className={styles.cta}>Explore our mission</button>
           </Link>

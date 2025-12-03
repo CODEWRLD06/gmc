@@ -1,9 +1,23 @@
 .container {
     min-height: 100vh;
+    background-image: url("/vision.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
 }
 
+.container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
 
 .content {
+    position: relative;
+    z-index: 1;
     max-width: 100%;
 }
 
@@ -13,8 +27,13 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+    background: rgba(139, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
     flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
 }
 
 .headerContainer h1 {
@@ -22,88 +41,154 @@
     font-weight: 700;
     margin-bottom: 1rem;
     color: #FFD700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .headerContainer p {
     font-size: 1.3rem;
-    opacity: 0.9;
+    opacity: 0.95;
+    max-width: 700px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .info {
-    margin: 0 5rem;
+    padding: 5rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .grid {
-    padding: 2rem;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 }
 
-.visionContent, .missionContent {
-    background: white;
+.visionContent, 
+.missionContent {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
     padding: 3rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    border-top: 5px solid #FFD700; 
-    transition: transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 220ms ease, border-color 220ms ease;
-    transform-origin: center center;
-    will-change: transform, box-shadow;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
 }
-
-.visionContent h2, .missionContent h2 {
-    font-size: 1.8rem;
-}
-
-.visionContent p, .missionContent p {
-    font-size: 1.3rem;
-    opacity: 0.9;
-}
-
-
-
 
 .visionContent:hover,
-.visionContent:focus-within,
-.missionContent:hover,
-.missionContent:focus-within {
-    transform: translateY(-6px) scale(1.002);
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
-    border-top-color: #FFC850;
+.missionContent:hover {
+    background: rgba(0, 0, 0, 0.75);
+    border-color: rgba(255, 215, 0, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
 }
 
+.visionContent h2, 
+.missionContent h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.visionContent p, 
+.missionContent p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.visionContent ul,
+.missionContent ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.visionContent li,
+.missionContent li {
+    padding: 0.7rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+.visionContent li::before,
+.missionContent li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.2rem;
+    width: 6px;
+    height: 6px;
+    background: #FFD700;
+    border-radius: 50%;
+}
 
 @media (prefers-reduced-motion: reduce) {
-    .visionContent { transition: none; transform: none; }
-    .missionContent { transition: none; transform: none; }
+    .visionContent, 
+    .missionContent {
+        transition: none;
+        transform: none;
+    }
 }
 
-
 @media (hover: none) and (pointer: coarse) {
-    .visionContent { transition: none; transform: none; }
-    .missionContent { transition: none; transform: none; }
+    .visionContent:hover, 
+    .missionContent:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .info {
+        padding: 4rem 5%;
+    }
 }
 
 @media (max-width: 768px) {
-
-    .content {
-        background: #FAFAFA;
+    .container {
+        background-attachment: scroll;
     }
 
+    .headerContainer {
+        padding: 2rem;
+    }
 
     .headerContainer h1 {
         font-size: 2rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
     }
 
     .headerContainer p {
         font-size: 1.1rem;
-        opacity: 0.9;
-        margin-left: 20px;
     }
 
     .info {
-        margin: .5rem;
+        padding: 3rem 5%;
+    }
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .visionContent, 
+    .missionContent {
+        padding: 2rem;
+    }
+
+    .visionContent h2, 
+    .missionContent h2 {
+        font-size: 1.6rem;
+    }
+
+    .visionContent p, 
+    .missionContent p {
+        font-size: 0.95rem;
     }
 }
