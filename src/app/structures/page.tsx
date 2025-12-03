@@ -1,3 +1,4 @@
+import Image from "next/image"
 import styles from "./structures.module.css";
 
 type Team = {
@@ -76,6 +77,15 @@ export default function StructuresPage() {
 
     return (
         <div className={styles.container}>
+            <Image 
+                src="/structure.png"
+                alt="structure"
+                fill
+                priority
+                style={{
+                    "objectFit": "cover"
+                }}
+            />
             <div className={styles.content}>
                 <div className={styles.headerContainer}>
                     <h1>Organization Structure</h1>

@@ -1,9 +1,19 @@
+import Image from "next/image"
 import { Timer } from "lucide-react"
 import styles from "./goals.module.css"
 
 export default function GoalsPage() {
     return (
         <div className={styles.container}>
+            <Image 
+                src="/goals.png"
+                alt="goals"
+                fill
+                priority
+                style={{
+                    "objectFit": "cover"
+                }}
+            />
             <div className={styles.content}>
                 <div className={styles.headerContainer}>
                     <h1>Strategic Goals</h1>

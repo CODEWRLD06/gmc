@@ -1,7 +1,4 @@
 .hero {
-    background-image: url("/hero.png");
-    background-size: cover;
-    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
@@ -16,6 +13,7 @@
 .hero::before {
     content: '';
     position: absolute;
+    inset: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -25,6 +23,7 @@
         rgba(139, 0, 0, 0.7) 0%, 
         rgba(139, 0, 0, 0.6) 100%
     );
+    z-index: 0;
 }
 
 .heroContent {
