@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { MapPin, Mail, Phone } from "lucide-react"
 import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -7,15 +6,6 @@ import styles from "./contact.module.css"
 export default function Contact () {
     return (
         <div className={styles.container}>
-            <Image 
-                src="/contact.png"
-                alt="contact"
-                fill
-                priority
-                style={{
-                    "objectFit": "cover"
-                }}
-            />
             <div className={styles.content}>
                 <div className={styles.headerContainer}>
                     <h1>Get In Touch</h1>

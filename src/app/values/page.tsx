@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from "./values.module.css"
 
 type Value = {
@@ -58,15 +57,6 @@ export default function Values() {
 
     return (
         <div className={styles.container}>
-            <Image
-                src="/value.png"
-                alt="value"
-                fill
-                priority
-                style={{
-                    "objectFit": "cover"
-                }}
-            />
             <div className={styles.content}>
                 <div className={styles.headerContainer}>
                     <h1>Core Values</h1>

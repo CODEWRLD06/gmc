@@ -1,6 +1,10 @@
 
 .container {
   min-height: 100vh;
+  background-image: url("/value.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   height: 2400px;
 }

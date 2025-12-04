@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from "./five.module.css"
 
 type G = {
@@ -38,15 +37,6 @@ export default function FivePage() {
 
     return (
         <div className={styles.container}>
-            <Image 
-                src="/five.png"
-                alt="five"
-                fill
-                priority
-                style={{
-                    "objectFit": "cover"
-                }}
-            />
             <div className={styles.content}>
                 <div className={styles.headerContainer}>
                     <h1>The 5 G&apos;s of GMC</h1>

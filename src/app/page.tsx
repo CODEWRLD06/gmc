@@ -8,15 +8,6 @@ export default function Home() {
   return (
     
       <div className={styles.hero}>
-        <Image 
-          src="/hero.png"
-          alt="hero"
-          fill
-          priority
-          style={{
-            "objectFit": "cover"
-          }}
-        />
         <div className={styles.heroContent}>
           <div className={styles.logoContainer}>
               <Image src={Logo} alt="logo" width={400} height={400} className={styles.logo}/>

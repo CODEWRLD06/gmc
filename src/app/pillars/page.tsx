@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { database } from "@/vals"
 import styles from "./pillars.module.css"
 
@@ -6,15 +5,6 @@ export default function Pillars() {
 
     return (
         <div className={styles.container}>
-            <Image 
-                src="/pillars.png"
-                alt="pillars"
-                fill
-                priority
-                style={{
-                    "objectFit": "cover"
-                }}
-            />
             <div className={styles.content}>
                 <div className={styles.headerContainer}>
                     <h1>Core Pillars</h1>
